@@ -3,7 +3,7 @@ from socket import *
 
 def main():
     print("Msg\tResult\tTime (ms)")
-    for val in range(1, 100):
+    for val in range(1, 250):
         clientSocket = socket(AF_INET, SOCK_DGRAM)
         clientSocket.settimeout(1)
         message = str.encode(str(val))
